@@ -47,8 +47,8 @@ async function getUser(id) {
  * @returns {Promise}
  */
 async function emailCheck(email) {
-  const check = await usersRepository.createUser(email);
-  return user !== null;
+  const check = await usersRepository.emailCheck(email);
+  return check;
 }
 
 /**
